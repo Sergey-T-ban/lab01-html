@@ -1,0 +1,190 @@
+/* === ЗМІННІ КОЛЬОРІВ === */
+:root {
+    --color-primary: #1d4e89;
+    --color-accent: #ffb703;
+    --color-bg: #f7f9fc;
+    --color-surface: #ffffff;
+    --color-text: #1f2937;
+    --color-border: #d9e2ec;
+}
+
+/* === RESET === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* === BODY === */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-bg);
+}
+
+/* === CONTAINER === */
+.container {
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+/* === HEADER === */
+header {
+    background: var(--color-primary);
+    padding: 15px 0;
+}
+
+/* === NAVIGATION (Flexbox №1) === */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--color-accent);
+}
+
+/* === MAIN === */
+main {
+    padding: 20px;
+}
+
+/* === HEADINGS === */
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    margin-top: 20px;
+    color: var(--color-primary);
+}
+
+/* === TEXT === */
+p {
+    margin-bottom: 10px;
+}
+
+/* === LISTS === */
+ul,
+ol {
+    padding-left: 20px;
+}
+
+/* === IMAGE === */
+figure img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === TABLE === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid var(--color-border);
+}
+
+thead {
+    background: var(--color-primary);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+/* === CARD (для блоків) === */
+.card {
+    background: var(--color-surface);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* === ABOUT PAGE FLEXBOX (Flexbox №2) === */
+.two-column {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* === MEDIA === */
+video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* === FORM === */
+form {
+    background: var(--color-surface);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* === INPUTS === */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+/* === FOCUS === */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+/* === BUTTON === */
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* === HOVER === */
+button:hover {
+    background: var(--color-accent);
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--color-primary);
+    color: white;
+    margin-top: 30px;
+}

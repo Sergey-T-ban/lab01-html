@@ -2,6 +2,8 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/responsive.css">
   <title>Про мене</title>
 </head>
 
@@ -13,21 +15,31 @@
   <a href="contact.html">Контакти</a>
 </nav>
 
-<h1>Про мене</h1>
+<main class="container">
 
-<p>Мене звати студент. Я вивчаю HTML.</p>
+  <h1>Про мене</h1>
 
-<h2>Моє відео</h2>
-<video controls width="400">
-  <source src="../assets/media/demo.mp4" type="video/mp4">
-  <p>Ваш браузер не підтримує відео</p>
-</video>
+  <div class="card two-column">
 
-<h2>Мій аудіотрек</h2>
-<audio controls>
-  <source src="../assets/media/demo.mp3" type="audio/mpeg">
-  <p>Ваш браузер не підтримує аудіо</p>
-</audio>
+    <div>
+      <p>Мене звати Сергій. Я вивчаю HTML та CSS і хочу стати фронтенд-розробником.</p>
+    </div>
+
+    <div>
+      <h2>Моє відео</h2>
+      <video controls>
+        <source src="../assets/media/demo.mp4" type="video/mp4">
+      </video>
+
+      <h2>Мій аудіотрек</h2>
+      <audio controls>
+        <source src="../assets/media/demo.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+  </div>
+
+</main>
 
 </body>
 </html>
