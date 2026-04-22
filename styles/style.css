@@ -188,3 +188,53 @@ footer {
     color: white;
     margin-top: 30px;
 }
+
+/* АКТИВНЕ МЕНЮ */
+.is-active {
+    border-bottom: 2px solid var(--color-accent);
+}
+
+/* ТЕМНА ТЕМА */
+.theme-dark {
+    background: #111;
+    color: white;
+}
+
+/* КНОПКА ВГОРУ */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    background: var(--color-accent);
+    border: none;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+.accordion-content.open {
+    display: block;
+}
+
